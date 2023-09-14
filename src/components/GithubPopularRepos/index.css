@@ -1,0 +1,29 @@
+.main-container {
+}
+.heading {
+  font-family: 'Lobster';
+  text-align: center;
+  margin-bottom: 50px;
+}
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+.list-item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.loader {
+  text-align: center;
+}
+.failure-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.failure-image {
+  height: 400px;
+  width: 600px;
+}

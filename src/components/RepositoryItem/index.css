@@ -1,0 +1,36 @@
+.avatar-image-container {
+  text-align: center;
+}
+.avatar-img {
+  height: 80px;
+  width: 80px;
+}
+.item-container {
+  margin-top: 50px;
+  margin-right: 10px;
+  padding-top: 20px;
+  background-color: #f8f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 250px;
+}
+.name {
+  font-family: 'Roboto';
+  font-size: 28px;
+  color: #e73959;
+}
+.forks {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.issues {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.stars {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
