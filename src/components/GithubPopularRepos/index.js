@@ -111,20 +111,10 @@ class GithubPopularRepos extends Component {
     </div>
   )
 
-  renderOfInitialState = () => (
-    <div className="main-container">
-      <h1 className="heading">Popular</h1>
-      <div>{this.renderOfLanguageChange()}</div>
-    </div>
-  )
-
-  render() {
+  renderOfSwitchStatement = () => {
     const {apiStatus} = this.state
     console.log(apiStatus)
-    this.renderOfInitialState()
     switch (apiStatus) {
-      case apiStatusConstants.initial:
-        return this.renderOfInitialState()
       case apiStatusConstants.inProgress:
         return this.renderOfLoading()
       case apiStatusConstants.success:
@@ -134,6 +124,16 @@ class GithubPopularRepos extends Component {
       default:
         return null
     }
+  }
+
+  render() {
+    return (
+      <div className="main-container">
+        <h1 className="heading">Popular</h1>
+        <div>{this.renderOfLanguageChange()}</div>
+        <div>{this.renderOfSwitchStatement()}</div>
+      </div>
+    )
   }
 }
 export default GithubPopularRepos

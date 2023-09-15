@@ -10,6 +10,7 @@
   margin-right: 10px;
   padding-top: 20px;
   background-color: #f8f8ff;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +22,13 @@
   font-family: 'Roboto';
   font-size: 28px;
   color: #e73959;
+}
+.image-container {
+  display: flex;
+}
+.icon {
+  margin-top: 15px;
+  margin-right: 10px;
 }
 .forks {
   font-family: 'Roboto';
