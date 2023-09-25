@@ -126,14 +126,16 @@ class GithubPopularRepos extends Component {
     }
   }
 
+  renderOfInitial = () => (
+    <div className="main-container">
+      <h1 className="heading">Popular</h1>
+      <div>{this.renderOfLanguageChange()}</div>
+      {this.renderOfSwitchStatement()}
+    </div>
+  )
+
   render() {
-    return (
-      <div className="main-container">
-        <h1 className="heading">Popular</h1>
-        <div>{this.renderOfLanguageChange()}</div>
-        <div>{this.renderOfSwitchStatement()}</div>
-      </div>
-    )
+    return <div>{this.renderOfInitial()}</div>
   }
 }
 export default GithubPopularRepos

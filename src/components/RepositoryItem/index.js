@@ -1,7 +1,3 @@
-import {BsFillStarFill} from 'react-icons/bs'
-import {PiGitForkDuotone} from 'react-icons/pi'
-import {AiOutlineIssuesClose} from 'react-icons/ai'
-
 import './index.css'
 
 const RepositoryItem = props => {
@@ -21,15 +17,27 @@ const RepositoryItem = props => {
       </div>
       <h1 className="name">{name}</h1>
       <div className="image-container">
-        <BsFillStarFill className="icon" />
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/stars-count-img.png"
+          alt="stars"
+          className="icon"
+        />
         <p className="stars">{starsCount} stars</p>
       </div>
       <div className="image-container">
-        <PiGitForkDuotone className="icon" />
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/forks-count-img.png"
+          alt="forks"
+          className="icon"
+        />
         <p className="forks">{forksCount} forks</p>
       </div>
       <div className="image-container">
-        <AiOutlineIssuesClose className="icon" />
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/issues-count-img.png"
+          alt="open issues"
+          className="icon"
+        />
         <p className="issues">{issuesCount} open issues</p>
       </div>
     </li>
